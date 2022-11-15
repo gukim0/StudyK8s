@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubernets-simple-pod
+  labels:
+    app: kubernets-simple-pod
+spec:
+  containers:
+    - name: kubernets-simple-pod
+      image: arisu1000/simple-container-app:latest
+      ports:
+        - containerPort: 8080
